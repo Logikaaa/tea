@@ -1,0 +1,243 @@
+body{
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.headr{
+    background-color: #778D45;
+    padding-top: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.hd{
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-text{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Comfortaa";
+    padding: 30px;
+
+}
+
+.logo{
+text-align: center;
+
+font-family: 'Leckerli One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 48px;
+text-decoration: none;
+color: #FFFFFF;
+}
+.basket{
+  width: 50px;
+  height: 50px;
+  padding-left: 25px;
+}
+
+
+
+
+
+
+.slider {
+
+  justify-content: center;
+  margin-left: 20%;
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  max-width: 60%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Додаємо тінь для естетики */
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+h1{
+text-align: center;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 71px;
+
+color: #000000;
+}
+
+
+
+
+
+
+
+
+.photo-row {
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between; /* Рівномірний відступ між фото */
+  align-items: center;
+  width: 80%; /* Загальна ширина блоку */
+  gap: 15px; /* Відстань між фото */
+}
+
+.photo-card {
+  position: relative;
+  width: 100%; /* Займає доступну ширину (адаптивність) */
+  aspect-ratio: 3 / 4; /* Пропорції вертикального фото */
+  border-radius: 20px; /* Заокруглені краї */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для краси */
+  flex: 1; /* Фото рівномірно ділять доступний простір */
+
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Фото заповнює блок, не спотворюючись */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.4); Прозорий темний фон */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.photo-text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  font-family: "Noto Sans";
+}
+
+
+
+
+
+
+
+
+
+.container {
+  margin-top: 100px;
+  background-color: #AEC09A;
+  display: flex;
+  width: 96%;
+  padding: 20px; /* Відступи від країв */
+  gap: 20px; /* Відстань між лівою і правою половиною */
+  border-radius: 20px;
+}
+
+.left-side,
+.right-side {
+  flex: 1; /* Кожна половина займає однакову частину */
+}
+
+.photo-with-text {
+  position: relative;
+  width: 70%; /* Ширина фото становить 60% від лівої половини */
+  margin: 0 auto; /* Центрування фото всередині лівої половини */
+  aspect-ratio: 3 / 4; /* Пропорції фото (вища висота, ніж ширина) */
+  border-radius: 20px; /* Заокруглені краї фото */
+  overflow: hidden;
+}
+
+.photo-with-text img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Фото заповнює блок, не спотворюючись */
+}
+
+.photo-with-text .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.photo-with-text .overlay p {
+  margin: 5px 0; /* Відстань між рядками тексту */
+  font-size: 20px; /* Трохи більший шрифт для тексту поверх фото */
+  font-weight: bold;
+}
+
+.right-side p {
+  font-size: 24px; /* Трохи більший шрифт для правої частини */
+  line-height: 1.8; /* Висота між рядками для зручності читання */
+  color: #333; /* Темно-сірий текст */
+}
+
+
+
+
+
+ul{
+  text-align: left;
+  font-size: 24px;
+}
