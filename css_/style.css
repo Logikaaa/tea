@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     margin: 0px;
     align-items: center;
     text-align: center;
+    font-family: 'Comfortaa';
 }
 
 html{
@@ -114,6 +116,7 @@ font-size: 64px;
 line-height: 71px;
 
 color: #000000;
+margin-top: 100px;
 }
 
 
@@ -140,7 +143,36 @@ color: #000000;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для краси */
   flex: 1; /* Фото рівномірно ділять доступний простір */
+  transform: scale(1);
+  transition: transform 0.1s linear;
 
+}
+
+.photo-card:hover{
+  transform: scale(1.05);
+
+}
+
+.tea-btn{
+  background-color: #778D45;
+  color: #FFFFFF;
+  font-size: 26px;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  transform: scale(1);
+  transition: transform 0.2s linear;
+}
+
+.tea-btn:hover{
+  transform: scale(1.2);
 }
 
 .photo-card img {
@@ -184,7 +216,7 @@ color: #000000;
   margin-top: 100px;
   background-color: #AEC09A;
   display: flex;
-  width: 96%;
+  width: 100%;
   padding: 20px; /* Відступи від країв */
   gap: 20px; /* Відстань між лівою і правою половиною */
   border-radius: 20px;
@@ -240,4 +272,101 @@ color: #000000;
 ul{
   text-align: left;
   font-size: 24px;
+}
+
+.director-name{
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.director-disc{
+  font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.director-about{
+  font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    width: 638px;
+}
+
+.director-about li{
+  font-size: 36px;
+}
+
+.director-block{
+  width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer{
+  background-color: #778D45;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.info{
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info-link{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin-top: 12px;
+}
+
+.tel::before{
+  content: url('../images/telegram.png');
+  margin-right: 12px;
+}
+
+.tel{
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.mail::before {
+  content: url('../images/mail.png');
+  margin-right: 12px;
+}
+
+.mail {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  margin-top: 12px;
 }
