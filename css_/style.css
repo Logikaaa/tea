@@ -85,7 +85,7 @@ color: #FFFFFF;
   flex-shrink: 0;
 }
 
-button {
+main button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -96,13 +96,13 @@ button {
   cursor: pointer;
   border-radius: 50%;
 }
-button.prev {
+main button.prev {
   left: 10px;
 }
-button.next {
+main button.next {
   right: 10px;
 }
-button:hover {
+main button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -217,15 +217,18 @@ margin-top: 100px;
   background-color: #AEC09A;
   display: flex;
   width: 100%;
-  padding: 20px; /* Відступи від країв */
-  gap: 20px; /* Відстань між лівою і правою половиною */
-  border-radius: 20px;
+  padding: 0px; /* Відступи від країв */
+  gap: 0px; /* Відстань між лівою і правою половиною */
 }
 
 .left-side,
 .right-side {
   flex: 1; /* Кожна половина займає однакову частину */
 }
+.author-left{
+  padding-left: 20px;
+}
+
 
 .photo-with-text {
   position: relative;
@@ -297,9 +300,10 @@ ul{
     font-size: 36px;
     font-weight: 400;
     margin-top: 0;
+    padding-right: 20px;
     margin-bottom: 0;
     text-align: left;
-    width: 638px;
+    width: 45%;
 }
 
 .director-about li{
@@ -307,7 +311,7 @@ ul{
 }
 
 .director-block{
-  width: 1240px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -315,58 +319,82 @@ ul{
   padding-bottom: 100px;
 }
 
+
 footer{
   background-color: #778D45;
   color: #FFFFFF;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+} 
 .info{
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
-}
-
+} 
 .info-link{
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   display: block;
   margin-top: 12px;
 }
-
 .tel::before{
   content: url('../images/telegram.png');
   margin-right: 12px;
 }
-
 .tel{
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
   display: block;
   text-decoration: none;
   margin-top: 12px;
-}
-
+} 
 .mail::before {
   content: url('../images/mail.png');
   margin-right: 12px;
 }
-
 .mail {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
   display: block;
   text-decoration: none;
   margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+  /* Стилі для кнопки */
+  #scrollToTop {
+    display: none; /* Ховаємо кнопку спочатку */
+    position: fixed;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    background-color: #94989d70;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#scrollToTop:hover {
+    background-color: #1a7bc5b4;
 }
